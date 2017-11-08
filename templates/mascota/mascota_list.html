@@ -15,8 +15,9 @@
         </thead>
 
         <tbody>
-        {% if mascotas %}
-        {% for mascota in mascotas %}
+        <!--"if mascotas" entre etiqueta django para vista basada en funciones-->
+        {% if object_list %}
+        {% for mascota in object_list %}
 
             <tr>
                 <td>{{ mascota.id }}</td>
